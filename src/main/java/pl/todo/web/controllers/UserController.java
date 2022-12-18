@@ -6,11 +6,13 @@ import pl.todo.entity.Users;
 import pl.todo.service.UserService;
 
 import java.util.List;
-
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/user")
+
 public class UserController {
+
+
 
     private final UserService userService;
 

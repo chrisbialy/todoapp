@@ -6,6 +6,5 @@ import pl.todo.entity.Users;
 
 public interface RoleRepository extends JpaRepository<Roles, String> {
 
-
     Roles findRolesByRole(String role);
 }

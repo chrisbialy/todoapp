@@ -14,7 +14,6 @@ import javax.persistence.*;
 public class ToDoList {
 
 
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int tid;

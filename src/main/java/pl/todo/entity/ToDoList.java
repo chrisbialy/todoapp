@@ -13,6 +13,8 @@ import javax.persistence.*;
 @AllArgsConstructor
 public class ToDoList {
 
+
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int tid;

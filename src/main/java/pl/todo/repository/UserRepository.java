@@ -5,5 +5,6 @@ import pl.todo.entity.Users;
 
 public interface UserRepository extends JpaRepository<Users, String> {
     Users save (Users users);
+
     Users findUserByUsername(String username);
 }

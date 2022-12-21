@@ -25,4 +25,6 @@ public class Users {
     @JoinColumn(name = "rid")
     private Roles roles;
 
+
+
 }

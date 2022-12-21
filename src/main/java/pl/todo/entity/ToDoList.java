@@ -22,4 +22,9 @@ public class ToDoList {
     @ManyToOne(targetEntity= Users.class)
     @JoinColumn(name = "uid")
     private Users users;
+
+    public ToDoList(Users users, String item) {
+        this.users = users;
+        this.item = item;
+    }
 }

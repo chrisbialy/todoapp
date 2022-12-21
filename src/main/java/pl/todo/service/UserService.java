@@ -23,4 +23,9 @@ public class UserService {
 
     }
 
+    public boolean deleteById(Integer uid) {
+        userRepository.deleteById(uid);
+        return true;
+    }
+
 }

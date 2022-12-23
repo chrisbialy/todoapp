@@ -4,9 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99667a45-fff1-48ed-8090-0f0a56259d0e" name="Changes" comment="Commit: Controller, Repository">
+    <list default="true" id="99667a45-fff1-48ed-8090-0f0a56259d0e" name="Changes" comment="Commit: UserToDoListMapper, UserToDoListDto, delete functions, findToDoListByUsers function">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/todo/dtos/UserRoleDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/todo/mapper/UserRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/dtos/UserToDoListDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/dtos/UserToDoListDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/entity/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/repository/RoleRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/web/controllers/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/web/controllers/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/web/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/web/controllers/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,30 +54,30 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Chris/IdeaProjects/SDA_Projekt_koncowy/Zapas/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "84cdca864e94b6ee2081ff3059624326",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Chris/IdeaProjects/SDA_Projekt_koncowy/Zapas/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;84cdca864e94b6ee2081ff3059624326&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Chris\IdeaProjects\todoapp\src" />
@@ -116,7 +126,9 @@
       <option name="presentableId" value="Default" />
       <updated>1671362147063</updated>
       <workItem from="1671362148273" duration="6082000" />
-      <workItem from="1671383399439" duration="3859000" />
+      <workItem from="1671383399439" duration="4017000" />
+      <workItem from="1671644016783" duration="6099000" />
+      <workItem from="1671804569966" duration="11660000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Entities, Repositories">
       <created>1671371834994</created>
@@ -146,7 +158,21 @@
       <option name="project" value="LOCAL" />
       <updated>1671388745104</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Commit: Controller, Repository">
+      <created>1671388893259</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671388893259</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Commit: UserToDoListMapper, UserToDoListDto, delete functions, findToDoListByUsers function">
+      <created>1671651255555</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671651255555</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +183,34 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/master" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
@@ -166,6 +219,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Commit Entities, Repositories" />
     <MESSAGE value="Commit: Controller, Repository" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit: Controller, Repository" />
+    <MESSAGE value="Commit: UserToDoListMapper, UserToDoListDto, delete functions, findToDoListByUsers function" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit: UserToDoListMapper, UserToDoListDto, delete functions, findToDoListByUsers function" />
   </component>
 </project>

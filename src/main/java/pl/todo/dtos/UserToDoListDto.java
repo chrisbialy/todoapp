@@ -8,7 +8,7 @@ import lombok.*;
 @Getter
 public class UserToDoListDto {
 
-    private Integer userID;
+    private Integer userId;
     private String username;
     private String ToDoItem;
 }

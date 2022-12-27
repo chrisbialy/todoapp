@@ -10,11 +10,8 @@ import lombok.NoArgsConstructor;
 @Getter
 public class UserRoleDto {
 
-    private Integer userId;
     private String username;
     private String firstname;
     private String lastname;
     private String role;
-
-
 }

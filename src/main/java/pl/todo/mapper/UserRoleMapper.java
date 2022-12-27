@@ -15,7 +15,6 @@ public class UserRoleMapper {
     public Users toEntityUser(UserRoleDto userRoleDto) {
 
         return new Users(
-                userRoleDto.getUserId(),
                 userRoleDto.getUsername(),
                 userRoleDto.getFirstname(),
                 userRoleDto.getLastname(),

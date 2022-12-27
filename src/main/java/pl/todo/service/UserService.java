@@ -24,17 +24,17 @@ public class UserService {
         return userRepository.findAll()
                 .stream()
                 .map(users -> new UserRoleDto(
-                        users.getUid(),
                         users.getUsername(),
                         users.getFirstname(),
                         users.getLastname(),
-                        users.getRoles().getRid(),
                         users.getRoles().getRole()
                 ))
                 .collect(Collectors.toList());
     }
 
-    public  Users findUserById(Integer uid) {return userRepository.findById(uid).orElseThrow();}
+    public  Users findUserById(Integer uid) {
+        return userRepository.findById(uid).orElseThrow();
+    }
 
     /*public Users save(Users user) {
         return userRepository.save(user);

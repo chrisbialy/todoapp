@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99667a45-fff1-48ed-8090-0f0a56259d0e" name="Changes" comment="Commit: UserToDoListMapper, UserToDoListDto, delete functions, findToDoListByUsers function">
+    <list default="true" id="99667a45-fff1-48ed-8090-0f0a56259d0e" name="Changes" comment="Commit: Mappers, save and find functions">
       <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/todo/dtos/UserRoleDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pl/todo/mapper/UserRoleMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/dtos/UserToDoListDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/dtos/UserToDoListDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/dtos/UserRoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/dtos/UserRoleDto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/entity/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/repository/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/repository/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/mapper/UserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/mapper/UserRoleMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/repository/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/web/controllers/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/web/controllers/RoleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/web/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/web/controllers/UserController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +79,7 @@
       <recent name="C:\Users\Chris\IdeaProjects\todoapp\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.Main" />
       <module name="todoapp" />
@@ -96,6 +92,15 @@
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
+    </configuration>
+    <configuration name="generated-requests | #23" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="23" requestIdentifier="#23" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #24" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="24" requestIdentifier="#24" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #25" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="25" requestIdentifier="#25" runType="Run single request">
+      <method v="2" />
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="todoapp" />
@@ -112,8 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="HTTP Request.generated-requests | #25" />
+        <item itemvalue="HTTP Request.generated-requests | #24" />
+        <item itemvalue="HTTP Request.generated-requests | #23" />
+        <item itemvalue="Spring Boot.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -129,6 +137,8 @@
       <workItem from="1671383399439" duration="4017000" />
       <workItem from="1671644016783" duration="6099000" />
       <workItem from="1671804569966" duration="11660000" />
+      <workItem from="1671819797004" duration="133000" />
+      <workItem from="1672136614514" duration="7815000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Entities, Repositories">
       <created>1671371834994</created>
@@ -172,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1671651255555</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Commit: Mappers, save and find functions">
+      <created>1671819893766</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671819893767</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +237,7 @@
     <MESSAGE value="Commit Entities, Repositories" />
     <MESSAGE value="Commit: Controller, Repository" />
     <MESSAGE value="Commit: UserToDoListMapper, UserToDoListDto, delete functions, findToDoListByUsers function" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit: UserToDoListMapper, UserToDoListDto, delete functions, findToDoListByUsers function" />
+    <MESSAGE value="Commit: Mappers, save and find functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit: Mappers, save and find functions" />
   </component>
 </project>

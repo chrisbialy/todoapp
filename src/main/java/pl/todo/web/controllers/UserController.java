@@ -21,7 +21,7 @@ public class UserController {
     public ResponseEntity<List<UserRoleDto>> getAllUsers() {
         return ResponseEntity.ok(userService.findAll());}
 
-    @GetMapping("/{id}")
+    @GetMapping("/{uid}")
     public ResponseEntity<Users> getUserById(@PathVariable Integer uid) {
         return ResponseEntity.ok(userService.findUserById(uid));
     }
@@ -31,7 +31,7 @@ public class UserController {
         return ResponseEntity.ok(userService.save(user));
     }*/
 
-    @PostMapping("addUser")
+    @PostMapping("/addUser")
     public ResponseEntity<Users> saveUserWithRole(@RequestBody UserRoleDto userRoleDto) {
         return ResponseEntity.ok(userService.save(userRoleDto));
     }

@@ -3,7 +3,7 @@ package pl.todo.entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import pl.todo.entity.Roles;
+
 
 import javax.persistence.*;
 
@@ -26,8 +26,7 @@ public class Users {
     private Roles roles;
 
 
-    public Users(Integer uid, String username, String firstname, String lastname, Roles roles) {
-        this.uid = uid;
+    public Users(String username, String firstname, String lastname, Roles roles) {
         this.username = username;
         this.firstname = firstname;
         this.lastname = lastname;

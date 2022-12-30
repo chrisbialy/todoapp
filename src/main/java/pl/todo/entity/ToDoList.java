@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import pl.todo.entity.Users;
 import javax.persistence.*;
 
 @Data
@@ -23,8 +22,9 @@ public class ToDoList {
     @JoinColumn(name = "uid")
     private Users users;
 
-    public ToDoList(Users users, String item) {
+    public ToDoList(String item, Users users)  {
         this.users = users;
         this.item = item;
     }
+
 }

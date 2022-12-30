@@ -1,23 +1,24 @@
 package pl.todo.mapper;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Component;
-import pl.todo.dtos.UserToDoListDto;
+import pl.todo.dtos.ToDoListUserDto;
 import pl.todo.entity.ToDoList;
+import pl.todo.service.UserService;
 
 @Component
 @RequiredArgsConstructor
 public class UserToDoListMapper {
 
+    private final UserService userService;
 
 
-    public UserToDoListDto toDto(ToDoList toDoList) {
 
-        return new UserToDoListDto(
-        toDoList.getUsers().getUid(),
-        toDoList.getUsers().getUsername(),
-        toDoList.getItem()
-        );
+    public ToDoList toEntityToDoListUser(ToDoListUserDto toDoListUserDto) {
+
+        return new ToDoList(
+                toDoListUserDto.getItem(),
+                userService.findUserByUsername(toDoListUserDto.getUsername()
+                ));
     }
-
 
 }

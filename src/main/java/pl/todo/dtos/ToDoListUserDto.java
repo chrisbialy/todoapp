@@ -2,13 +2,13 @@ package pl.todo.dtos;
 
 import lombok.*;
 
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class UserToDoListDto {
+public class ToDoListUserDto {
 
-    private Integer userId;
+    private String item;
     private String username;
-    private String ToDoItem;
 }

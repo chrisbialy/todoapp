@@ -21,7 +21,7 @@ public class Users {
     private String firstname;
     private String lastname;
 
-    @ManyToOne(targetEntity= Roles.class)
+    @ManyToOne(targetEntity = Roles.class)
     @JoinColumn(name = "rid")
     private Roles roles;
 
@@ -32,8 +32,7 @@ public class Users {
         this.lastname = lastname;
         this.roles = roles;
 
-
     }
 
-
 }
+

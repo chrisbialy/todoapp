@@ -2,11 +2,10 @@ package pl.todo.web.controllers;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pl.todo.dtos.ToDoListUserDto;
 import pl.todo.dtos.UserRoleDto;
 import pl.todo.dtos.UserRoleDtoWithId;
 import pl.todo.entity.Users;
-import pl.todo.service.ToDoListService;
+import pl.todo.service.TodolistService;
 import pl.todo.service.UserService;
 
 import java.util.List;
@@ -17,7 +16,7 @@ import java.util.List;
 public class UserController {
 
 
-    private final ToDoListService toDoListService;
+    private final TodolistService toDoListService;
     private final UserService userService;
 
     @GetMapping()

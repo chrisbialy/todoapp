@@ -7,7 +7,7 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class ToDoListUserDto {
+public class TodolistuserDto {
 
     private String item;
     private String username;

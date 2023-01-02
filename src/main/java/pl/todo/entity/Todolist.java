@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-public class ToDoList {
+public class Todolist {
 
 
     @Id
@@ -22,9 +22,9 @@ public class ToDoList {
     @JoinColumn(name = "uid")
     private Users users;
 
-    public ToDoList(String item, Users users)  {
-        this.users = users;
+    public Todolist(String item, Users users)  {
         this.item = item;
+        this.users = users;
     }
 
 }

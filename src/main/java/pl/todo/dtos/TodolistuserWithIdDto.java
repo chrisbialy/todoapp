@@ -9,7 +9,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
-public class ToDoListUserWithIdDto {
+public class TodolistuserWithIdDto {
     private Integer tid;
     private String item;
     private String username;

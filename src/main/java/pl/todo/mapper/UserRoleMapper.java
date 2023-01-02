@@ -18,6 +18,8 @@ public class UserRoleMapper {
                 userRoleDto.getUsername(),
                 userRoleDto.getFirstname(),
                 userRoleDto.getLastname(),
+                userRoleDto.getEmail(),
+                userRoleDto.getPassword(),
                 roleService.findRolesByRole(userRoleDto.getRole()
                 ));
     }

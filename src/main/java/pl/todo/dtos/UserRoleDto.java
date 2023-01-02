@@ -4,6 +4,8 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
+import javax.validation.constraints.Email;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -13,5 +15,8 @@ public class UserRoleDto {
     private String username;
     private String firstname;
     private String lastname;
+    @Email
+    private String email;
+    private String password;
     private String role;
 }

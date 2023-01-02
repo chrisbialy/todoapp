@@ -26,6 +26,7 @@ public class UserService {
                         users.getUsername(),
                         users.getFirstname(),
                         users.getLastname(),
+                        users.getEmail(),
                         users.getRoles().getRole()
                 ))
                 .collect(Collectors.toList());

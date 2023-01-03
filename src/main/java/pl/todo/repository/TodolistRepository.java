@@ -6,6 +6,7 @@ import java.util.List;
 
 public interface TodolistRepository extends JpaRepository<Todolist, Integer> {
 
-  List<Todolist> findTodolistByUsersUsernameIsLike(String username);
+  /*List<Todolist> findTodolistByUsersUsernameIsLike(String username);*/
+  List<Todolist> findTodolistByUsers_Username(String username);
 
 }

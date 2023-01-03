@@ -47,7 +47,7 @@ public class TodolistService {
     }
 
    public List<TodolistuserDto> findItemByUsername(String username) {
-        return toDoListRepository.findTodolistByUsersUsernameIsLike(username)
+        return toDoListRepository.findTodolistByUsers_Username(username)
                 .stream()
                 .map(userToDoListMapper::toDto)
                 .collect(Collectors.toList());

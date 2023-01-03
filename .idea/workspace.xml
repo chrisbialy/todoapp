@@ -4,58 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99667a45-fff1-48ed-8090-0f0a56259d0e" name="Changes" comment="Commit: TodolistRepository&#10;findTodolistByUsersUsernameIsLike, TodolistController getItemByUsername, TodolistService findItemByUsername">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/angular.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/karma.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/app-routing.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/app.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/app.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/app.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/app.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/app.module.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist/todolist.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist/todolist.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist/todolist.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist/todolist.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/user.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/user.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/userform/userform.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/userform/userform.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/userform/userform.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/userform/userform.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/userlist/userlist.component.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/userlist/userlist.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/userlist/userlist.component.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/userlist/userlist.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/assets/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/environments/environment.prod.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/environments/environment.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/polyfills.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/tsconfig.app.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/todo-app/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="99667a45-fff1-48ed-8090-0f0a56259d0e" name="Changes" comment="Commit: TodolistRepository findTodolistByUsers_Username, TodolistService findItemByUsername">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/dtos/UserRoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/dtos/UserRoleDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/dtos/UserRoleDtoWithId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/dtos/UserRoleDtoWithId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/entity/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/entity/Users.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/mapper/UserRoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/mapper/UserRoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/todo/web/controllers/TodolistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/todo/web/controllers/TodolistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist/todolist.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist/todolist.component.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist/todolist.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist/todolist.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist/todolist.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/todo-app/src/app/todolist/todolist.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,33 +51,33 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Chris/IdeaProjects/SDA_Projekt_koncowy/Zapas/pom.xml",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "84cdca864e94b6ee2081ff3059624326",
-    "ts.external.directory.path": "C:\\Users\\Chris\\IdeaProjects\\todoapp\\src\\main\\resources\\todo-app\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Chris/IdeaProjects/SDA_Projekt_koncowy/Zapas/pom.xml&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;84cdca864e94b6ee2081ff3059624326&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Chris\\IdeaProjects\\todoapp\\src\\main\\resources\\todo-app\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
@@ -128,17 +86,17 @@
       <recent name="C:\Users\Chris\IdeaProjects\todoapp\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.Main">
-    <configuration name="generated-requests | #23" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="23" requestIdentifier="#23" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #24">
+    <configuration name="generated-requests | #24" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="24" requestIdentifier="#24" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #30" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="30" requestIdentifier="#30" runType="Run single request">
-      <method v="2" />
-    </configuration>
-    <configuration name="generated-requests | #31" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="31" requestIdentifier="#31" runType="Run single request">
+    <configuration name="generated-requests | #32" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="32" requestIdentifier="#32" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #33" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="33" requestIdentifier="#33" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #34" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="34" requestIdentifier="#34" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Main" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
@@ -156,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #24" />
         <item itemvalue="Spring Boot.Main" />
-        <item itemvalue="HTTP Request.generated-requests | #23" />
-        <item itemvalue="HTTP Request.generated-requests | #31" />
+        <item itemvalue="HTTP Request.generated-requests | #32" />
+        <item itemvalue="HTTP Request.generated-requests | #34" />
         <item itemvalue="HTTP Request.generated-requests | #33" />
-        <item itemvalue="HTTP Request.generated-requests | #30" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +144,13 @@
       <workItem from="1672402534866" duration="3175000" />
       <workItem from="1672410572552" duration="3451000" />
       <workItem from="1672646975806" duration="5000" />
-      <workItem from="1672647063301" duration="28703000" />
+      <workItem from="1672647063301" duration="29042000" />
+      <workItem from="1672733413987" duration="944000" />
+      <workItem from="1672734377911" duration="19655000" />
+      <workItem from="1672767997731" duration="1362000" />
+      <workItem from="1672769377260" duration="166000" />
+      <workItem from="1672769607075" duration="77000" />
+      <workItem from="1672769804114" duration="5872000" />
     </task>
     <task id="LOCAL-00001" summary="Commit Entities, Repositories">
       <created>1671371834994</created>
@@ -258,7 +222,21 @@
       <option name="project" value="LOCAL" />
       <updated>1672651765786</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Commit: Angular userform, userlist - component, service, retrieve user list, add user, delete user">
+      <created>1672683776342</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1672683776342</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Commit: TodolistRepository findTodolistByUsers_Username, TodolistService findItemByUsername">
+      <created>1672735434186</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1672735434186</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -311,6 +289,8 @@
     <MESSAGE value="Commit: UserController saveUserWithRole function, getAllUsers function, getUserById function, RoleController findAllRoles, findRoleByRid" />
     <MESSAGE value="Commit: UserController, UserControler findUserByUsername,&#10;UserToDoListMapper  toEntityToDoListUser, ToDoListController saveToDoListUser, ToDoListService save(ToDoListUserDto toDoListUserDto)" />
     <MESSAGE value="Commit: TodolistRepository&#10;findTodolistByUsersUsernameIsLike, TodolistController getItemByUsername, TodolistService findItemByUsername" />
-    <option name="LAST_COMMIT_MESSAGE" value="Commit: TodolistRepository&#10;findTodolistByUsersUsernameIsLike, TodolistController getItemByUsername, TodolistService findItemByUsername" />
+    <MESSAGE value="Commit: Angular userform, userlist - component, service, retrieve user list, add user, delete user" />
+    <MESSAGE value="Commit: TodolistRepository findTodolistByUsers_Username, TodolistService findItemByUsername" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit: TodolistRepository findTodolistByUsers_Username, TodolistService findItemByUsername" />
   </component>
 </project>

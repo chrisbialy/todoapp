@@ -38,7 +38,7 @@ public class TodolistController {
         return ResponseEntity.ok(toDoListService.save(toDoListUserDto));
     }
 
-    @DeleteMapping("/{tid}")
+    @DeleteMapping("deleteItem/{tid}")
     public ResponseEntity<Boolean> deleteToDoList(@PathVariable Integer tid) {
         return ResponseEntity.ok(toDoListService.deleteById(tid));
     }

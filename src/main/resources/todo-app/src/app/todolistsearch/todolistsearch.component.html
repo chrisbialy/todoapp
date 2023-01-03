@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="row mb-4">
+    <div class="col d-flex justify-content-left">
+      <h3>Search note by username</h3>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mb-4">
+    <div class="col d-flex justify-content-left">
+      <form  name='searchBar' >
+
+        <div class="form-outline mb-4">
+          <input [(ngModel)]="username"
+                 (keyup.enter)="onSubmit(username)"
+                 type="text"
+                 class="form-control"
+                 id="username"
+                 name="searchBar"
+                 placeholder="Enter username"
+                 required>
+        </div>
+        <button class="btn btn-primary hidden-xs btn-block mb-4"  type="button" for="searchBar"
+                (click)="onSubmit(username)" >Search</button>
+      </form>
+  </div>
+
+  </div>
+  <div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+        <tr>
+          <th scope="col">Username</th>
+          <th scope="col">Note</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let todolistsearch of todolistsearches">
+          <td>{{ todolistsearch.username }}</td>
+          <td>{{ todolistsearch.item }}</td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+

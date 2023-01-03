@@ -1,1 +1,43 @@
-<p>todolist works!</p>
+<div class="container h2_margin">
+  <h2>ToDo List</h2>
+  <p>All Notes</p>
+
+
+  <div class="row">
+
+    <div class="col-12 col-sm-1">
+      <a href="todolistsearch" class="btn btn-outline-info btn_border" type="button">Search note by username</a>
+    </div>
+
+  </div>
+
+
+
+
+  <div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+        <tr>
+          <th scope="col">Uid</th>
+          <th scope="col">Username</th>
+          <th scope="col">Note</th>
+          <th scope="col">Remove</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let todolist of todolists">
+          <td>{{ todolist.tid }}</td>
+          <td>{{ todolist.username }}</td>
+          <td>{{ todolist.item }}</td>
+          <td>
+            <button  (click)="OnDelete(todolist)" type="button" class="btn btn-default btn-sm">
+              <span class="glyphicon glyphicon-trash"></span>
+            </button>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

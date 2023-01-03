@@ -6,21 +6,24 @@ import { UserlistComponent } from './userlist/userlist.component';
 import { UserformComponent } from './userform/userform.component';
 import { TodolistComponent } from './todolist/todolist.component';
 import {HttpClientModule} from "@angular/common/http";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
+import { TodolistsearchComponent } from './todolistsearch/todolistsearch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserlistComponent,
     UserformComponent,
-    TodolistComponent
+    TodolistComponent,
+    TodolistsearchComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-    FormsModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

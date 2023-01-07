@@ -1,0 +1,60 @@
+<div class="container">
+  <div class="row mb-4">
+    <div class="col d-flex justify-content-left">
+      <h3>Find user by user Id</h3>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row mb-4">
+    <div class="col d-flex justify-content-left">
+
+      <form  name='searchBar' >
+        <div class="form-outline mb-4">
+            <input [(ngModel)]="uid"
+              (keyup.enter)="onSubmitId(uid)" type="number"
+              class="form-control"
+              id="uid"
+              name="searchBar"
+              placeholder="Enter user Id" required>
+        </div>
+
+        <button class="btn btn-primary hidden-xs btn-block mb-4"
+                type="button" for="searchBar"
+                (click)="onSubmitId(uid)">Search
+        </button>
+      </form>
+
+</div>
+  </div>
+
+  <div class="card my-5">
+    <div class="card-body">
+      <table class="table table-bordered table-striped">
+        <thead class="thead-dark">
+        <tr>
+          <th scope="col">Uid</th>
+          <th scope="col">Username</th>
+          <th scope="col">Firstname</th>
+          <th scope="col">Lastname</th>
+          <th scope="col">Email</th>
+          <th scope="col">Password</th>
+          <th scope="col">Rid</th>
+          <th scope="col">Role</th>
+        </tr>
+        </thead>
+        <tbody>
+        <td>{{ usersearches.uid }}</td>
+        <td>{{ usersearches.username }}</td>
+        <td>{{ usersearches.firstname }}</td>
+        <td>{{ usersearches.lastname }}</td>
+        <td>{{ usersearches.email }}</td>
+        <td>{{ usersearches.password }}</td>
+        <td>{{ usersearches.roles.rid }}</td>
+        <td>{{ usersearches.roles.role}}</td>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

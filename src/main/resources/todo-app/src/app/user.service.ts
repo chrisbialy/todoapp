@@ -16,6 +16,8 @@ export class UserService {
     return this.http.get<User[]>(`${this.apiServerUrl}/user`);
   }
 
+
+
   public save(user: User) {
     return this.http.post<User>(`${this.apiServerUrl}/user/addUser`, user);
   }

@@ -8,6 +8,9 @@ import { TodolistComponent } from './todolist/todolist.component';
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TodolistsearchComponent } from './todolistsearch/todolistsearch.component';
+import { UsersearchComponent } from './usersearch/usersearch.component';
+import { UsersearchidComponent } from './usersearchid/usersearchid.component';
+import { UserComponent } from './user/user.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { TodolistsearchComponent } from './todolistsearch/todolistsearch.compone
     UserlistComponent,
     UserformComponent,
     TodolistComponent,
-    TodolistsearchComponent
+    TodolistsearchComponent,
+    UsersearchComponent,
+    UsersearchidComponent,
+    UserComponent
   ],
     imports: [
         BrowserModule,

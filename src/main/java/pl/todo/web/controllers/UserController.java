@@ -35,11 +35,7 @@ public class UserController {
         return ResponseEntity.ok(userService.findUserByUsername(username));
     }
 
-   /* @GetMapping("/todo/{username}")
-    public ResponseEntity<List<ToDoListUserDto>> findToDoListByUsername(@PathVariable String username) {
-        return ResponseEntity.ok(userService.findListToDoByUsername(username));
-    }
-*/
+
    @PostMapping("/addUser")
     public ResponseEntity<Users> saveUserWithRole(@RequestBody UserRoleDto userRoleDto) {
         return ResponseEntity.ok(userService.save(userRoleDto));

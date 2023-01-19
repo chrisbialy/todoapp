@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.Optional;
 
 @Data
 @Entity
@@ -27,4 +28,6 @@ public class Todolist {
         this.users = users;
     }
 
+    public Todolist(String item, Optional<Users> userByUsername) {
+    }
 }

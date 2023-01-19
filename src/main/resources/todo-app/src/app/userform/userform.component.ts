@@ -29,7 +29,7 @@ export class UserformComponent implements OnInit {
   }
 
   gotoUserList() {
-    this.router.navigate(['/user']);
+    this.router.navigate(['/userlist']);
   }
 
   ngOnInit(): void {

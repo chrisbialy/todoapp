@@ -37,6 +37,10 @@ public class TodolistService {
         return toDoListRepository.findById(tid).orElseThrow();
     }
 
+    /* Adding items to ToDoList does not work as expected as it does not take userID [uid]
+       into account when writing data to the DB. The uid in todolist table gets NULL value
+       what results in not displaying a todolist per user */
+
     public Todolist save(TodolistuserDto toDoListUserDto) {
         return toDoListRepository.save(userToDoListMapper.toEntityToDoListUser(toDoListUserDto));
     }

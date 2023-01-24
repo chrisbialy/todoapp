@@ -5,12 +5,15 @@ import { AppComponent } from './app.component';
 import { UserlistComponent } from './userlist/userlist.component';
 import { UserformComponent } from './userform/userform.component';
 import { TodolistComponent } from './todolist/todolist.component';
-import {HttpClientModule} from "@angular/common/http";
+import {HTTP_INTERCEPTORS, HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { TodolistsearchComponent } from './todolistsearch/todolistsearch.component';
 import { UsersearchComponent } from './usersearch/usersearch.component';
 import { UsersearchidComponent } from './usersearchid/usersearchid.component';
 import { UserComponent } from './user/user.component';
+import { LoginComponent } from './login/login.component';
+import {HttpInterceptorService} from "./basic-auth-interceptor.service";
+import { AddtodoitemComponent } from './addtodoitem/addtodoitem.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { UserComponent } from './user/user.component';
     TodolistsearchComponent,
     UsersearchComponent,
     UsersearchidComponent,
-    UserComponent
+    UserComponent,
+    LoginComponent,
+    AddtodoitemComponent
   ],
     imports: [
         BrowserModule,
@@ -30,7 +35,14 @@ import { UserComponent } from './user/user.component';
         FormsModule,
         ReactiveFormsModule
     ],
-  providers: [],
+  providers: [
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HttpInterceptorService,
+      multi: true
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+

@@ -2,6 +2,9 @@
   <div class="main-body">
 
 
+      <button class="btn btn-info" *ngIf="isLoggedIn" class="nav-link" href="/logout" (click)=handleLogout()>Logout</button>
+
+
 
     <!-- /Breadcrumb -->
 
@@ -75,7 +78,7 @@
             <hr>
             <div class="row">
               <div class="col-sm-12">
-                <a class="btn btn-info " target="__blank" href="https://www.bootdey.com/snippets/view/profile-edit-data-and-skills">Edit</a>
+                <a class="btn btn-info" href="user">Edit</a>
               </div>
             </div>
           </div>

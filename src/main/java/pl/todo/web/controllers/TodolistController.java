@@ -9,7 +9,7 @@ import pl.todo.entity.Todolist;
 import pl.todo.service.TodolistService;
 
 import java.util.List;
-
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/todolist")
@@ -32,6 +32,9 @@ public class TodolistController {
         return ResponseEntity.ok(toDoListService.findItemByUsername(username));
     }
 
+        /* Adding items to ToDoList does not work as expected as it does not take userID [uid]
+       into account when writing data to the DB. The uid in todolist table gets NULL value
+       what results in not displaying a todolist per user */
 
     @PostMapping("/addItem")
     public ResponseEntity<Todolist> saveToDoListUser(@RequestBody TodolistuserDto toDoListUserDto) {

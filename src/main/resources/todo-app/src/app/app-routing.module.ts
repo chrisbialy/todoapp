@@ -7,6 +7,9 @@ import {TodolistsearchComponent} from "./todolistsearch/todolistsearch.component
 import {UsersearchComponent} from "./usersearch/usersearch.component";
 import {UsersearchidComponent} from "./usersearchid/usersearchid.component";
 import {UserComponent} from "./user/user.component";
+import {LoginComponent} from "./login/login.component";
+import {AppComponent} from "./app.component";
+import {AddtodoitemComponent} from "./addtodoitem/addtodoitem.component";
 
 
 const routes: Routes = [
@@ -16,7 +19,9 @@ const routes: Routes = [
   {path: 'todolist', component: TodolistComponent},
   {path: 'todolistsearch', component: TodolistsearchComponent},
   {path: 'usersearch', component: UsersearchComponent},
-  {path: 'usersearchid', component: UsersearchidComponent}
+  {path: 'usersearchid', component: UsersearchidComponent},
+  {path: 'login', component: LoginComponent},
+  {path: 'addtodoitem', component: AddtodoitemComponent}
 
 ];
 

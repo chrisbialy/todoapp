@@ -22,6 +22,9 @@ export class UserService {
     return this.http.post<User>(`${this.apiServerUrl}/user/addUser`, user);
   }
 
+  /* Delete method should be improved, so it simultaneously removes any related items from todolist table where
+  users.uid = todolist.uid */
+
   deleteUser(user: User): Observable<User> {
     `${this.apiServerUrl}/user/deleteuser/${user.uid}`;
     return this.http.delete<User>(`${this.apiServerUrl}/user/deleteuser/${user.uid}`)

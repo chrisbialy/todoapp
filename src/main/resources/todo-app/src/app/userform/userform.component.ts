@@ -23,6 +23,11 @@ export class UserformComponent implements OnInit {
     private userService: UserService) {
   }
 
+  /* Save user allows to write a new user with a user role only. [which initially makes sense for anyone signing up]
+    An additional feature should be implemented in Admin dashboard, so the admin
+   role could be assigned to any user by existing admin.
+   Also, it would be worth assigning both an admin a user & an admin role, so it could be used for access permissions [hasRole]*/
+
   onSubmit() {
     this.userService.save(this.user)
       .subscribe(result => this.gotoUserList());

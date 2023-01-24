@@ -22,7 +22,7 @@ public class UserService {
 
 
 
-/*    @Override
+/**    @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         return userRepository
                 .findUserByUsername(username)
@@ -54,7 +54,7 @@ public class UserService {
     }
 
 
-    // Optional
+    // Optional<>
 
     /*public Optional<Users> findUserByUsername(String username) {
 
@@ -72,11 +72,6 @@ public class UserService {
         return userRepository.save(userRoleMapper.toEntityUser(userRoleDto));
     }
 
-   /* public Users save(UserRoleDto userRoleDto) {
-        return userRepository.save(userRoleMapper.toEntityUser(userRoleDto));
-
-    }
-*/
    /* public Users save(UserRoleDto userRoleDto) {
         return userRepository.save(userRoleMapper.toEntityUser(userRoleDto));
 

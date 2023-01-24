@@ -5,7 +5,6 @@ import pl.todo.repository.UserRepository;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationProvider;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -38,6 +37,7 @@ public class UserAuthenticationProvider implements AuthenticationProvider {
      * @return
      * @throws AuthenticationException
      */
+
     @Override
     public Authentication authenticate(Authentication authentication) throws AuthenticationException {
 
@@ -56,6 +56,8 @@ public class UserAuthenticationProvider implements AuthenticationProvider {
             throw new BadCredentialsException("Password mismatch");
         }
     }
+
+    /**  Get a list of roles - comma separated*/
 
     private List<GrantedAuthority> getUserRoles(String userRoles) {
         List<GrantedAuthority> grantedAuthorityList = new ArrayList<>();

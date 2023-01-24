@@ -1,23 +1,26 @@
 package pl.todo.web.controllers;
 
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import pl.todo.dtos.UserRoleDto;
 import pl.todo.dtos.UserRoleDtoWithId;
 import pl.todo.entity.Users;
+import pl.todo.repository.UserRepository;
+import pl.todo.security.UserAuthenticationProvider;
 import pl.todo.service.UserService;
 import java.util.List;
 import org.springframework.web.bind.annotation.*;
 
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/user")
-
 public class UserController {
 
     private final UserService userService;
-
 
 
     @GetMapping()
@@ -31,9 +34,11 @@ public class UserController {
         return ResponseEntity.ok(userService.findUserById(uid));
     }
 
-    @GetMapping("/username/{username}")
+
+    @GetMapping(path = "/username/{username}")
     public ResponseEntity<Users> getUserByUsername(@PathVariable String username) {
         return ResponseEntity.ok(userService.findUserByUsername(username));
+
     }
 
     @GetMapping("/getUserRoles")
@@ -48,10 +53,13 @@ public class UserController {
     }*/
 
 
-   @PostMapping("/addUser")
+    @PostMapping("/addUser")
     public ResponseEntity<Users> saveUserWithRole(@RequestBody UserRoleDto userRoleDto) {
         return ResponseEntity.ok(userService.save(userRoleDto));
     }
+
+
+
 
     @DeleteMapping("/deleteuser/{uid}")
     public ResponseEntity<Boolean> deleteUser(@PathVariable Integer uid) {
@@ -59,3 +67,4 @@ public class UserController {
     }
 
 }
+
